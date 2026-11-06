@@ -6,9 +6,9 @@
 - docker-compose.yml   编排 Dify + backend
 
 ## 启动与测试
-- 后端开发：`cd backend && uvicorn app.main:app --reload --port 8000`
-- 前端预览：`cd frontend && python -m http.server 8080`
-- 后端 lint：`cd backend && ruff check . && mypy .`
+- 后端开发：（待定，目前优先做前端）
+- 前端预览：`cd frontend && npx http-server -p 8080` （或者直接用浏览器打开 index.html）
+- 后端 lint：`cd backend && uvx ruff check . && uvx mypy app`
 - 前端 lint：`npx eslint frontend/`
 - 每次改完必须跑 lint，报错清零再 commit
 
